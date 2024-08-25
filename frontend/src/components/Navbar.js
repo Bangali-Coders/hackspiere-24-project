@@ -22,6 +22,10 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" href="/openlayers-map">OpenLayers Map</Link>
                         </li>
+                        
+                        <li className="nav-item">
+                            <Link className="nav-link active" aria-current="page" href="/ola-map">Ola Maps</Link>
+                        </li>
 
                         
                     </ul>
