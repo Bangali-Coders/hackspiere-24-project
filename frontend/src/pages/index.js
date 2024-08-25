@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Head from "next/head";
 
 export default function Home() {
@@ -6,7 +7,11 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <h1>Hello World</h1>
+
+      <Navbar />
+      <main className="container my-3">
+        <h1>Home Page</h1>
+      </main>
     </>
   );
 }
