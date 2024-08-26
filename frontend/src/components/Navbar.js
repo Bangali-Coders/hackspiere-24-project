@@ -22,12 +22,17 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" href="/openlayers-map">OpenLayers Map</Link>
                         </li>
-                        
+
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" href="/ola-map">Ola Maps</Link>
                         </li>
 
-                        
+                        <li className="nav-item">
+                            <Link className="nav-link active" aria-current="page" href="/gemini">Gemini</Link>
+                        </li>
+
+
+
                     </ul>
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
