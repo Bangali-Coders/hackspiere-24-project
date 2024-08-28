@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { GoogleGenerativeAI } from '@google/generative-ai'
+import PromptPrefix1 from '@/lib/prompts/prompt1';
+import { toast } from 'react-toastify';
 
 const GeminiBody = () => {
     const [prompt, setPrompt] = useState("");
@@ -9,6 +11,14 @@ const GeminiBody = () => {
 
     const tryGemini = async (e) => {
         e.preventDefault();
+
+        let myPrompt = prompt.trim();
+        if (myPrompt === "") {
+            toast.error("Please enter a prompt");
+            return;
+        }
+        console.log(`Prompt: ${myPrompt}`);
+        myPrompt = PromptPrefix1(myPrompt);
 
         setLoading(true);
         const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_API_KEY);
@@ -20,9 +30,6 @@ const GeminiBody = () => {
                 // responseMimeType: "application/json"
             },
         });
-
-        const myPrompt = prompt.trim();
-        console.log(`Prompt: ${myPrompt}`);
 
         const result = await model.generateContent(myPrompt);
 
