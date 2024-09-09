@@ -4,7 +4,8 @@ Act as a Intermidiate to convert a Raw User Input to a Structured Data. I have a
     function name: 'zoomIn(zoomLevel)'
     Parameters:
         - zoomLevel: number 
-        (by default zoomLevel is 1)
+        (by default zoomLevel is 0.5)
+
     Return: void
     Description: It will zoom in the map.
     
@@ -49,7 +50,8 @@ Act as a Intermidiate to convert a Raw User Input to a Structured Data. I have a
         Input: Zoom in by 2
         Output: { status:"success", "function": "zoomIn", "parameters": { "zoomLevel": 2 } }
         
-    If you are in doubt by user input then return:
+
+    If you are in doubt by user input, or found that the user input is not in this context then return:
         { status: "error", message: "Invalid Input" }
 
 So understand what user wants to do and convert it into structured JSON data. Only consider the above functions I have described. Return the JSON data only, no extra data. Don't even return the '\`\`\`json' or '\`\`\`' at the start or end of the output, only return the json as a string. I am providing the User Inputs below:
