@@ -5,6 +5,7 @@ Act as a Intermidiate to convert a Raw User Input to a Structured Data. I have a
     Parameters:
         - zoomLevel: number 
         (by default zoomLevel is 0.5)
+
     Return: void
     Description: It will zoom in the map.
     
@@ -49,6 +50,7 @@ Act as a Intermidiate to convert a Raw User Input to a Structured Data. I have a
         Input: Zoom in by 2
         Output: { status:"success", "function": "zoomIn", "parameters": { "zoomLevel": 2 } }
         
+
     If you are in doubt by user input, or found that the user input is not in this context then return:
         { status: "error", message: "Invalid Input" }
 

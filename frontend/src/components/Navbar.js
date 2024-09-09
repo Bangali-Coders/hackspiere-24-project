@@ -35,10 +35,6 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" href="/gemini">Gemini</Link>
                         </li>
-                        
-                        <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" href="/ola-map">Ola Maps</Link>
-                        </li>
 
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" href="/record-audio">Record Audio</Link>
