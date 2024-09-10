@@ -1,4 +1,6 @@
 import "@/styles/globals.css";
+import "@/styles/olamaps.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect } from "react";
 

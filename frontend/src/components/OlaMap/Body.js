@@ -1,6 +1,7 @@
 import React from 'react'
 import Map from './Map'
 
+
 const OlaMapsBody = () => {
     return (<main className="container my-3">
         <div className="row">
